@@ -56,7 +56,7 @@ header > span#book{
     padding: 10px;
     font-size: 3em;
 
-    color: var(--cor1);
+    color: transparent;
 }
 
 header > span#notf{
@@ -68,8 +68,10 @@ header > span#notf{
     animation: balancar 1s infinite alternate;
 }
 
-/* ============================================MAIN=========================================== */
-
+/* ============================================MENU=========================================== */
+menu#menu{
+    display: none;
+}
 
 /* ============================================SECTION=========================================== */
 section{
