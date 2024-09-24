@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* ============================================FONTES======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+/* ============================================PALETAS======================================== 
+--cor1: #7AA12A;
+--cor2: #FDBB29;
+--cor3: #F2FFB7;
+--cor4: #FF3327;*/
+
+
+/* ============================================VARIAVEIS======================================== */
+:root{
+    --fonte-titulo: "Quicksand", sans-serif;
+    --fonte-padrao: "Rubik", sans-serif;
+    --fonte-menu: "Handlee", cursive;
+    --cor1: #3B3B3D;
+    --cor2: #873BC2;
+    --cor3: #B998CF;
+    --cor4: #561B80;
+}
+
+
+/* ============================================GERAL======================================== */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ==============================================HEADER============================================= */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1{
+    padding: 15px 0px;
+    font-size: 2.2em;
+    font-family: var(--fonte-menu);
+
+    color: var(--cor1);
+}
+
+header > span#book{
+    padding: 10px;
+    font-size: 3em;
+
+    color: var(--cor1);
+}
+
+header > span#notf{
+    padding: 10px;
+    font-size: 2em;
+
+    color: var(--cor1);
+
+    animation: balancar 1s infinite alternate;
+}
+
+/* ============================================MAIN=========================================== */
+
+
+/* ============================================SECTION=========================================== */
+section.lista{
+    width: 100vw;
+    height: 100vh;
+
+    border-radius: 90px 0px 0px 0px ;
+    background-color: var(--cor2);
+}
+
+section.lista > h1{
+    padding: 10px;
+    
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
+}
+
+section.lista > ol{
+    width: 280px;
+    padding: 10px;
+    margin: auto;
+    
+    list-style-position: inside;
+    font-size: 1.3em;
+    font-family: var(--fonte-padrao);
+    
+    color: white;
+    background-color: var(--cor4);
+    border-radius: 10px;
+    border: 4px dashed var(--cor2);
+}
+
+section.lista > ol > li{
+    padding-bottom: 5px ;
+}
+
+
+
+/* ==============================================DIV============================================== */
+
+
+/* ============================================ANIMATION=========================================== */
+
+@keyframes balancar{
+    0%{
+        rotate: -45deg;
+    }
+    100%{
+        rotate: 45deg
+    }
+}
+
+
