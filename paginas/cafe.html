@@ -10,20 +10,30 @@
 </head>
 <body>
     <header>
-        <span class="material-symbols-outlined" id="book">menu_book</span>
+        <span class="material-symbols-outlined" id="book" onclick="ver(this, menu)">menu_book</span>
         <h1>Café</h1>
         <span class="material-symbols-outlined" id="notf">notifications</span>
     </header>
+    <menu id="menu">
+        <div>
+            <a href="../index.html">Menu</a>
+            <a href="../paginas/cafe.html">Café</a>
+            <a href="../paginas/cafe.html">Refeição</a>
+            <a href="../paginas/cafe.html">higiene</a>
+            <a href="../paginas/cafe.html">limpeza</a>
+            <a href="../paginas/cafe.html">????</a>
+        </div>
+    </menu>
     <main>
         <section class="lista">
            <h1>Lista de compras</h1>
-           <ol>
-            <li>Pão de forma</li>
-            <li>Café</li>
-           </ol>
+           <input type="checkbox" name="item1" id="itemId1">
+           <label for="nome1">Pão de forma</label>
+           <input type="checkbox" name="item2" id="itemId2">
+           <label for="nome2">Leite Integral</label>
         </section>
     </main>
 
-    <script src="menu.js"></script>
+    <script src="../menu.js"></script>
 </body>
 </html>
